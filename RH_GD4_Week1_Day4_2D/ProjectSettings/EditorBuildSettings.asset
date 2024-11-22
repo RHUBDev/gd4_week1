@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/PachinkoStart.unity
+    guid: e6ad2f2eec3d9be439633216ec851625
+  - enabled: 1
     path: Assets/Scenes/Pachinko.unity
     guid: 8af9a840d3ceda9469058d7ddfd92540
   m_configObjects: {}
