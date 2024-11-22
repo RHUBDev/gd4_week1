@@ -8,6 +8,8 @@ public class Miss : MonoBehaviour
     public TMPro.TMP_Text goaltext;
     public Game game;
     public bool end = false;
+    public AudioSource sound;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!end)
@@ -16,6 +18,7 @@ public class Miss : MonoBehaviour
             if (collision.gameObject.tag == "Ball")
             {
                 goaltext.text = "Miss!";
+                sound.Play();
                 game.Restart1();
             }
         }

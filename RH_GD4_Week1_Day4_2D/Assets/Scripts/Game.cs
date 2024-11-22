@@ -21,6 +21,7 @@ public class Game : MonoBehaviour
     public TMPro.TMP_Text finaltext;
     public GameObject restartButton;
     private bool doneend = false;
+    public AudioSource sound;
 
     private void Start()
     {
@@ -68,6 +69,7 @@ public class Game : MonoBehaviour
                 {
                     finaltext.text = "You Scored: " + score + "!\nRecord: " + record;
                 }
+                sound.Play();
                 Time.timeScale = 0.0f;
                 restartButton.SetActive(true);
             }
